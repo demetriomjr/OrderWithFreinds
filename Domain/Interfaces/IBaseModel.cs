@@ -8,8 +8,8 @@ public interface IBaseModel
         INACTIVE = 0,
         ACTIVE = 1,
     }
-    
-    public long Id { get; set; }
+
+    public long Id { get; init; }
     public ModelState State { get; set; }
     public DateTimeOffset CreatedAt { get; init; }
     public DateTimeOffset UpdatedAt { get; set; }
